@@ -36,12 +36,19 @@ const App = () => {
           <Route exact path="/crypto/:coinId" element={<CryptoDetails />} />
           <Route exact path="/news" element={<News />} />
         </Routes>
-      </div>
-      <div className="footer" level={5}>
-<Typography.Title>
-  Cryptoverse<br />
-All Right Are Reserve
-</Typography.Title>
+
+        <div className="footer" level={5}>
+          <Typography.Title style={{ color: "white", textAlign: "center" }}>
+            Cryptoverse
+            <br />
+            All Right Are Reserve
+          </Typography.Title>
+          <Space>
+            <Link to="/">Home</Link>
+            <Link to="/exchanges">Exchanges</Link>
+            <Link to="/news">News</Link>
+          </Space>
+        </div>
       </div>
     </div>
   );
